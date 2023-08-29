@@ -1,12 +1,13 @@
-# Mock Myntra
-A mock eCommerce website built for the Frontend Developer Role/Internship at Go Comet.
+# ![Myntra Logo](https://github.com/srihari-m-s/mock-myntra/blob/master/src/assets/Myntra-icon-logo.svg?raw=true) Mock Myntra
+A mock eCommerce website that is inspired by [Myntra](https://www.myntra.com).
 
-# Overview
+[![Netlify Status](https://api.netlify.com/api/v1/badges/058c9541-bcbc-4efe-bcfa-31444d4a7707/deploy-status)](https://app.netlify.com/sites/mock-myntra/deploys)
+
+# Project Objectives
 1. Create a Shirts Page that resembles [Myntra](https://www.myntra.com/shirts) shirts page.
     - Add Filter functinality.
     - Add Sorting Functionality.
     - Add Wishlist functionality.
-    - Full-text Search on Products.
     - Product card resembles myntra design.
 2. Create Individual Products Page that resembles [Myntra](https://www.myntra.com/shirts/highlander/highlander-men-white-slim-fit-casual-shirt/2050688/buy) product page.
     - Add Select Size functionality.
@@ -16,21 +17,22 @@ A mock eCommerce website built for the Frontend Developer Role/Internship at Go 
     - Multiple products can be added or removed from the bag.
 
 
-## Implementation
+## Overview
 
 ### 1. Technology Used
 
 - Vite (To setup minimal React project Template)
 - React 
 - Vanilla CSS
-- React Router latest 
+- React Router v6 
 - JS libraries
     - match-sorter (used in filtering implementation)
     - react-icons
     - react-medium-image-zoom (used to implement "show full size image on click" function)
 
 ### 2. Shirts Page
-Main page of the assignment. Product filters, Sort Selection. The data fetching is handled using
+Main page of the project. It is a typical eCommerce products page with filters and sorting functionality.
+Products can be searched by name on this page.
 
 #### 2.1 Sidebar Component
 Sidebar contains the implemented filtering functionality.
@@ -43,7 +45,7 @@ Filters implemented -
 #### 2.2 Product Grid
 
 Displays products in a responsive grid. Products and their details are shown as a "card". 
-When no filters are selected, shows the full list of products. When a filter is active, shows  the 
+When no filters are selected, shows the full list of products. When a filter is active, shows the 
 filtered list of products.
 
 - Each product Card has the "Add to Wishlist  functionality".
@@ -58,9 +60,9 @@ product info. Lets user select size for the product and after that lets the user
 - Size is a required for "Add to Bag functionality"
 -  On  image click, a full size version of the image is shown to the user.
 
-### 4. Bag
+### 4. Bag Page
 
-Can be accessed by clicking the "Bag" icon in Navigation. On click, it opens a modal that displays Items in wish list and items in bag. Multiple Items can be added to to Wishlist and Bag. Current implementation only allows users to remove items from bag. More number of same items cannot be manipulated from the bag modal.
+Bag/Cart page can be accessed by clicking the "Bag" icon in Navigation. Displays Items in wish list and items in bag. Multiple Items can be added to to Wishlist and Bag.
 
 ##  Deployment and Running project Locally
 
