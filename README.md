@@ -1,19 +1,19 @@
 # Mock Myntra
 A mock eCommerce website built for the Frontend Developer Role/Internship at Go Comet.
 
-## Objectives of the website
+# Overview
 1. Create a Shirts Page that resembles [Myntra](https://www.myntra.com/shirts) shirts page.
--- Add Filter functinality.
--- Add Sorting Functionality.
--- Add Wishlist functionality.
--- Full-text Search on Products.
--- Product card resembles myntra design.
+    - Add Filter functinality.
+    - Add Sorting Functionality.
+    - Add Wishlist functionality.
+    - Full-text Search on Products.
+    - Product card resembles myntra design.
 2. Create Individual Products Page that resembles [Myntra](https://www.myntra.com/shirts/highlander/highlander-men-white-slim-fit-casual-shirt/2050688/buy) product page.
--- Add Select Size functionality.
--- Image on click should show a full size version.
--- Add to Bag and Wishlist functionality.
--- Bag should persist during the whole session.
--- Multiple products can be added or removed from the bag.
+    - Add Select Size functionality.
+    - Image on click should show a full size version.
+    - Add to Bag and Wishlist functionality.
+    - Bag should persist during the whole session.
+    - Multiple products can be added or removed from the bag.
 
 
 ## Implementation
