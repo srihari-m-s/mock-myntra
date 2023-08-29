@@ -10,6 +10,7 @@ import Root from './routes/root-layout/Root.jsx'
 import Shirts from './routes/shirts/Shirts.jsx'
 import ProductPage from './routes/product/ProductPage.jsx'
 import Home from './routes/home/Home.jsx'
+import BagPage from './routes/bag/BagPage';
 
 
 /**
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
         <Route index element={<Shirts />} />
         <Route path=":productId" element={<ProductPage />}/>
       </Route>
+      <Route path='/bag' element={<BagPage />}/>
     </Route>
   )
 )

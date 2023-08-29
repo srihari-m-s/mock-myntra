@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { formattedData } from "../../features/products/data";
-import { addToBag, addToWishlist } from "../../features/bag/bagSlice";
+import { addToBag, addToWishlist, setItemQty } from "../../features/bag/bagSlice";
 import { useDispatch, useSelector } from "react-redux";
 import IconStar from "../../components/ant-icons/IconStar";
 import IconBasic_heart from "../../components/ant-icons/IconBasic_heart";
@@ -29,6 +29,7 @@ export default function ProductPage() {
 
     // Read wishlist state
     let thingsInWishlist = useSelector((state) => state.bag.itemsInWishlist);
+    let thingsInBag = useSelector((state) => state.bag.itemsInBag);
 
     // Function to add "size" key to product
     function handleSetSize(e, product){
@@ -43,9 +44,20 @@ export default function ProductPage() {
     // Add selected product to bag
     function sendToBag(e,product){
         e.preventDefault();
-        let count = product.itemCount;
+        let count = 0;
+        
+        thingsInBag.forEach(item => {
+            if(item.id === `${product.id}${size}`){
+                count = item.itemCount;
+            }
+        });
+
         count += 1;
-        dispatch(addToBag({...product, size: size, itemCount: count}))
+        if(count === 1){
+            dispatch(addToBag({...product, size: size, itemCount: count, id: `${product.id}${size}`}))
+        } else {
+            dispatch(setItemQty({id: `${product.id}${size}`, count: count}));
+        }
     }
 
 

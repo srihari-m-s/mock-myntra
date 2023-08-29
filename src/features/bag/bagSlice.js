@@ -20,6 +20,14 @@ export const bagSlice = createSlice({
         removeFromBag: (state, action) => {
             state.itemsInBag = state.itemsInBag.filter(item => item.id !== action.payload.id)
         },
+        setItemQty: (state, action) => {
+            state.itemsInBag.forEach((item, index) => {
+                if(item.id === action.payload.id){
+                    item = {...item, itemCount: action.payload.count};
+                    state.itemsInBag.splice(index,1, item);
+                }
+            })
+        },
         addToWishlist: (state, action) => {
             state.itemsInWishlist.push(action.payload)
         },
@@ -29,6 +37,6 @@ export const bagSlice = createSlice({
     },
 })
 
-export const { addToBag, removeFromBag, addToWishlist, removeFromWishlist, takeOneFromBag } = bagSlice.actions;
+export const { addToBag, removeFromBag, addToWishlist, removeFromWishlist, setItemQty} = bagSlice.actions;
 
 export default bagSlice.reducer;

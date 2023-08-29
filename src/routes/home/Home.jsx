@@ -11,7 +11,7 @@ export default function Home() {
     <div className='container-lg'>
       <div className="link-wrapper">
         <h1 className='myntra-color'>Welcome to mock Myntra</h1>
-        <p>Page under construction ⌛, please visit shirts page...</p>
+        <p>Page under construction<span className='rotate'>⏳</span>, please visit shirts page...</p>
         <Link to="/shirts">
             <button className='link-button'>Go to Shirts page</button>
         </Link>

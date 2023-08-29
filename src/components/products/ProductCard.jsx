@@ -57,7 +57,7 @@ export default function ProductCard({ product }) {
                     <h4 className='card-heading'>{product.brand}</h4>
                     <p className='card-description'>{product.title}</p>
                     <h5 className='card-price'>
-                        Rs. {Math.floor(product.price - product.price * (product.discount/100))}
+                        Rs. {Math.ceil(product.price - product.price * (product.discount/100))}
                         {product.discount !== 0 ? <span className='original-price'>Rs. {product.price}</span> : null}
                         {product.discount !== 0 ? <span className='discount'>({product.discount}% OFF)</span> : null}
                     </h5>
