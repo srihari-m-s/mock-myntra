@@ -1,0 +1,37 @@
+.sidebar-wrapper{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    z-index: 10;
+    width: fit-content;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filter-container{
+    padding-block: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.slide-in-out{
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .sidebar-wrapper{
+        width: max(20%, max-content);
+        display: block;
+        transform: translateX(0%);
+        opacity: 1;
+        position: relative;
+    }
+    
+}

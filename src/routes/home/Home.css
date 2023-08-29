@@ -1,0 +1,40 @@
+.link-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.myntra-color{
+    background: linear-gradient(to right, magenta, orangered, red, magenta);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+}
+
+.link-button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background-color: rgb(255, 80, 123);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    padding: 1em 2em;
+}
+
+.link-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.link-button:active{
+    color: rgb(255, 80, 123);
+    background-color: white;
+    border: 1px solid rgb(255, 80, 123);
+}

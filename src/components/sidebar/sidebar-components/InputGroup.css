@@ -1,0 +1,46 @@
+.group-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.group-wrapper h5{
+    margin-block-end: 1em;
+    text-transform: uppercase;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-shape{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1em;
+    cursor: pointer;
+    accent-color: orangered;
+}
+
+.category-shape{
+    appearance: none;
+    border: 1px solid rgba(100, 100, 100);
+    border-radius: 50%;
+}
+
+.category-shape:checked{
+    border-color: orangered;
+    background-color: orangered;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.input-label{
+    font-size: 0.75rem;
+    margin-top: 0em;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
