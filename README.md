@@ -1,4 +1,4 @@
-# ![Myntra Logo](https://github.com/srihari-m-s/mock-myntra/blob/master/src/assets/Myntra-icon-logo.svg?raw=true) Mock Myntra
+# Mock Myntra
 A mock eCommerce website that is inspired by [Myntra](https://www.myntra.com).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/058c9541-bcbc-4efe-bcfa-31444d4a7707/deploy-status)](https://app.netlify.com/sites/mock-myntra/deploys)
