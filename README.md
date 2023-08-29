@@ -25,9 +25,9 @@ A mock eCommerce website built for the Frontend Developer Role/Internship at Go 
 - Vanilla CSS
 - React Router latest 
 - JS libraries
--- match-sorter (used in filtering implementation)
--- react-icons
--- react-medium-image-zoom (used to implement "show full size image on click" function)
+    - match-sorter (used in filtering implementation)
+    - react-icons
+    - react-medium-image-zoom (used to implement "show full size image on click" function)
 
 ### 2. Shirts Page
 Main page of the assignment. Product filters, Sort Selection. The data fetching is handled using
@@ -66,7 +66,8 @@ Can be accessed by clicking the "Bag" icon in Navigation. On click, it opens a m
 
 ### 1. Run Locally
 
-- Download the mock-myntra.zip folder from [Google Drive](https://drive.google.com/file/d/1c6hNI8LBgXTWU3drrFvag3NewI7ef7yN/view?usp=sharing).
+- Clone the repository with git or download the files from GitHub.
+    - ``git clone https://github.com/srihari-m-s/mock-myntra.git``
 - Unzip and cd to mock-myntra folder.
 - Run ``npm install `` to install all dependencies.
 - Run ``npm run dev`` to start local development server.
