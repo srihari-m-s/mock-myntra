@@ -7,6 +7,18 @@
     gap: 1em;
 }
 
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+
+.lazy-outer{
+    transition: opacity 0.5s ease-in-out;
+}
+
 .card-wrapper{
     height: 25rem;
     max-width: 15rem;

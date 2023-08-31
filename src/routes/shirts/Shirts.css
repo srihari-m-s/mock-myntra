@@ -52,6 +52,15 @@
     flex-grow: 1;    
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+    height: 70dvh;
+}
+
 @media screen and (min-width: 1280px) {
     .products-header{
         flex-direction: row;

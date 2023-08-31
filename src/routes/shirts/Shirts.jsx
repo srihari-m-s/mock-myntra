@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { formattedData } from "../../features/products/data";
 import { useFetchMenProductsQuery, useFetchWomenProductsQuery } from "../../features/products/products-api-slice"
 import './Shirts.css'
+import { BounceLoader } from "react-spinners";
 
 /**
  * Shirts Page
@@ -63,7 +64,12 @@ export default function Shirts(){
                 
                 <Sidebar />
                 <div className="product-grid m-inline">
-                    {products.length === 0 ? <h2>Loading...Please wait.</h2> : <ProductGrid products={products}/>}
+                    {products.length === 0 ? 
+                    <div className="flex-center">
+                        {/* <h2>Loading...Please wait.</h2> */}
+                        <BounceLoader color="orangered"/>
+                    </div> : 
+                    <ProductGrid products={products}/>}
                 </div>
             </div>
         </div>

@@ -120,8 +120,8 @@ export default function ProductGrid({ products }){
     //  Render all clothing data
         return (
             <div className="grid-wrapper">
-                {products.map(product => {
-                    return <ProductCard product={product} key={product.id}/>
+                {products.map((product,index) => {
+                    return <ProductCard product={product} key={`${product.id}${index}`}/>
                 })}
             </div>
         )
