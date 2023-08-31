@@ -1,0 +1,8 @@
+.alice-carousel__stage-item > .item{
+    /* background-color: aquamarine !important; */
+    padding-inline: 1em !important;
+}
+
+.alice-carousel__stage-item > .item > img{
+    margin-block: auto !important;
+}

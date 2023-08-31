@@ -5,7 +5,7 @@ import Hero1 from '../../assets/hero1.webp';
 import Hero2 from '../../assets/hero2.webp';
 import Hero3 from '../../assets/hero3.webp';
 import Hero4 from '../../assets/hero4.webp';
-import './Carousel.css'
+import './LargeCarousel.css'
 
 const items = [
     <div className="item" data-value="1">
@@ -14,10 +14,10 @@ const items = [
     <div className="item" data-value="2">
         <img src={Hero2} alt="Hero Image" />
     </div>,
-    <div className="item" data-value="2">
+    <div className="item" data-value="3">
         <img src={Hero3} alt="Hero Image" />
     </div>,
-    <div className="item" data-value="2">
+    <div className="item" data-value="4">
         <img src={Hero4} alt="Hero Image" />
     </div>,
 ];
@@ -28,7 +28,7 @@ export default function LargeCarousel() {
         <AliceCarousel
             autoPlay
             // autoPlayControls
-            autoPlayStrategy="default"
+            autoPlayStrategy="none"
             autoPlayInterval={5000}
             animationDuration={1000}
             animationType="fadeout"

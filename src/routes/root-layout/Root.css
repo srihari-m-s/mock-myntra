@@ -26,6 +26,10 @@
     margin-block-start: 5rem;
 }
 
+.mb{
+    margin-block-end: 4rem;
+}
+
 .m-inline{
     margin-inline: 2rem;
 }

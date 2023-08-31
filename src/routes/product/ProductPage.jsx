@@ -71,7 +71,7 @@ export default function ProductPage() {
     }
 
     return (
-        <div className="container-lg">
+        <div className="container-lg mt">
             <div className="products-container">
 
                 <h1 className="products-container-heading">{product.brand} {product.subCategory}</h1>

@@ -16,11 +16,10 @@ export default function Root(){
             <div className="root-wrapper">
                 <Navigation />
                 
-                <div className="container-lg">
-                    <main className='mt'>
-                        <Outlet />
-                    </main>
-                </div>
+                <main className="">
+                    <Outlet />
+                </main>
+
             </div>
         </Provider>
     )
