@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import Navigation from '../../components/navigation/Navigation'
 import './Root.css'
 import { store } from '../../redux/store'
@@ -19,7 +19,7 @@ export default function Root(){
                 <main className="">
                     <Outlet />
                 </main>
-
+                {/* <ScrollRestoration /> */}
             </div>
         </Provider>
     )

@@ -21,7 +21,7 @@ export default function BagPage(){
     });
 
     return (
-        <div className="container-lg bagpage-wrapper">
+        <div className="container-lg bagpage-wrapper mt">
 
             <div className="items-info-container">
                 

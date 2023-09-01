@@ -27,7 +27,7 @@ export default function ProductCard({ product }) {
 
     return (
         
-        <InView>
+        <InView threshold={0} triggerOnce fallbackInView>
             {({ ref, inView, entry}) => (<div ref={ref} className={`lazy-outer ${inView ? "opacity-1" : "opacity-0"}`}>
                 {inView ? <div className="card-wrapper">
                     <Link to={`${product.id}`} className='links'>

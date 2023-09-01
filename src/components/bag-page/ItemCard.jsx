@@ -57,8 +57,8 @@ export default function ItemCard({item, isWishlist}){
                 <button className='remove-btn' onClick={e => handleRemove(e, item)}>Remove</button>
             </div> :
             <div className="small-card-btns">
-                <button className='modal-link' onClick={e => incrementQty(e, item)}>+</button>
-                <button className='modal-link' onClick={e => decrementQty(e, item)}>-</button>
+                <button className='plus-minus-btn' onClick={e => incrementQty(e, item)}>+</button>
+                <button className='plus-minus-btn' onClick={e => decrementQty(e, item)}>-</button>
                 <button className='remove-btn' onClick={e => handleRemoveFromBag(e, item)}>Remove</button>
             </div>
             }
