@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './BagPage.css';
 import ItemCard from "../../components/bag-page/ItemCard";
 
-const convenienceFee = 50;
+
 
 export default function BagPage(){
 
@@ -19,6 +19,8 @@ export default function BagPage(){
         totalMRP += Math.floor(item.itemCount * item.price);
         discountOnMRP += item.itemCount * Math.ceil(item.price * (item.discount/100));
     });
+
+    let convenienceFee = totalMRP ? 50 : 0;
 
     return (
         <div className="container-lg bagpage-wrapper mt">
