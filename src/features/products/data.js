@@ -163,7 +163,103 @@ export const formattedData = [
             "rate": 2.1,
             "count": 430
         }
-    }
+    },
+    {
+        "id": 5,
+        "title": "Mens Casual Slim Fit",
+        "price": 6399,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "Arrow",
+        "discount": 42,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 2.9,
+            "count": 430
+        }
+    },
+    {
+        "id": 6,
+        "title": "Mens Casual Slim Fit",
+        "price": 3299,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "Arrow",
+        "discount": 53,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 3.3,
+            "count": 430
+        }
+    },
+    {
+        "id": 7,
+        "title": "Mens Casual Slim Fit",
+        "price": 9999,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "Allen Solly",
+        "discount": 22,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 1.9,
+            "count": 430
+        }
+    },
+    {
+        "id": 8,
+        "title": "Mens Casual Slim Fit",
+        "price": 4399,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "Allen SOlly",
+        "discount": 45,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 4.0,
+            "count": 430
+        }
+    },
+    {
+        "id": 9,
+        "title": "Mens Casual Slim Fit",
+        "price": 7599,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "Arrow",
+        "discount": 10,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 430
+        }
+    },
+    {
+        "id": 10,
+        "title": "Mens Casual Slim Fit",
+        "price": 8999,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "subCategory": "winter jacket",
+        "brand": "H&M",
+        "discount": 32,
+        "itemCount": 0,
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 3.8,
+            "count": 430
+        }
+    },
 ]
 
 /**
