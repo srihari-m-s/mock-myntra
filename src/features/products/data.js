@@ -219,7 +219,7 @@ export const formattedData = [
         "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
         "category": "men's clothing",
         "subCategory": "winter jacket",
-        "brand": "Allen SOlly",
+        "brand": "HIGHLANDER",
         "discount": 45,
         "itemCount": 0,
         "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",

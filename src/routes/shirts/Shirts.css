@@ -52,7 +52,7 @@
     flex-grow: 1;    
 }
 
-.flex-center{
+.shirts-loader{
     display: flex;
     justify-content: center;
     align-items: center;

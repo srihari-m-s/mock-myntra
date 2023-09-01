@@ -15,8 +15,8 @@
     opacity: 1;
 }
 
-.lazy-outer{
-    transition: opacity 0.5s ease-in-out;
+.transition-opacity{
+    transition: opacity 0.2s ease-in-out;
 }
 
 .card-wrapper{

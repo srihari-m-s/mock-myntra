@@ -65,7 +65,7 @@ export default function Shirts(){
                 <Sidebar />
                 <div className="product-grid m-inline">
                     {products.length === 0 ? 
-                    <div className="flex-center">
+                    <div className="shirts-loader">
                         {/* <h2>Loading...Please wait.</h2> */}
                         <BounceLoader color="orangered"/>
                     </div> : 

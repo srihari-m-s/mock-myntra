@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { addToWishlist } from '../../features/bag/bagSlice'
 import { Link } from 'react-router-dom'
 import IconStar from '../ant-icons/IconStar'
@@ -7,6 +7,7 @@ import IconBasic_heart from '../ant-icons/IconBasic_heart'
 import IconCard_view from '../ant-icons/IconCard_view'
 import './ProductCard.css'
 import LazyLoader from '../alice-carousel/LazyLoader';
+import { useInView } from 'framer-motion'
 
 
 /**
@@ -20,9 +21,16 @@ export default function ProductCard({ product }) {
     const dispatch = useDispatch()
     let itemsInWishlist = useSelector((state) => state.bag.itemsInWishlist)
 
+    // Lazy Loading Images
     const [, setTimestamp] = useState(0);
-
     const onLoad = () => setTimestamp(Date.now());
+
+    // Framer-motion useInView for lazy loading product cards
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        once: true,
+        amount: 0.25,
+    });
 
     // Add selected product to wishlist
     function handleWishlist(e, product){
@@ -32,7 +40,7 @@ export default function ProductCard({ product }) {
 
     return (
 
-        <div className="card-wrapper">
+        <div ref={ref} className={`card-wrapper transition-opacity ${isInView? 'opacity-1' : 'opacity-0'}`} >
             <Link to={`${product.id}`} className='links'>
                 <div className="card-image">
                     <LazyLoader onLoad={onLoad} src={product.image} />
