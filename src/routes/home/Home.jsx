@@ -13,8 +13,6 @@ export default function Home() {
     <section className="hero-wrapper">
       <div className='container-lg hero-container mt mb'>
 
-        {/* <h1 className='myntra-color'>Welcome to mock Myntra</h1> */}
-        {/* <p>Page under construction<span className='rotate'>⏳</span>, please visit shirts page...</p> */}
         <LargeCarousel />
         
         <hr />

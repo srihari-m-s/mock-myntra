@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { BounceLoader } from 'react-spinners';
+import './LazyLoader.css';
 
 
 export default function LazyLoader(props) {
@@ -28,5 +30,8 @@ export default function LazyLoader(props) {
         return () => clearTimeout(timerId);
     }, []);
 
-    return isLoading ? <div>Loading...</div> : <img width="100%" src={src} />;
+    return (isLoading ? 
+    <div className='flex-center'><BounceLoader color='orangered' /></div> : 
+    <img width="100%" src={src} />
+    );
 }

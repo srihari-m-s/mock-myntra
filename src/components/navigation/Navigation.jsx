@@ -35,35 +35,35 @@ export default function Navigation() {
   
             <div className="container-lg">
                 <nav className="navbar">
-                    <div className="logo">
+                    <div className="logo" onClick={handleNavToggle}>
                         <Link to="/"><img src={Logo} alt="Myntra logo" /></Link>
                     </div>
                     <div className="nav-menu-wrapper" ref={navToggle}>
                         <ul className="nav-menu1">
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">men</Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >men</Link>
                             </li>
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">women</Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >women</Link>
                             </li>
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">kids</Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >kids</Link>
                             </li>
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">home & living</Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >home & living</Link>
                             </li>
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">beauty</Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >beauty</Link>
                             </li>
                             <li className="nav-list">
-                                <Link to=".." className="nav-link">studio<span className="new">new</span></Link>
+                                <Link to=".." className="nav-link" onClick={handleNavToggle} >studio<span className="new">new</span></Link>
                             </li>
                         </ul>
                         <div className="search-container">
                             <span className="search-icon"><BsSearch /></span>
                             <input type="search" name="searchbar" id="searchbar" className="search-bar" placeholder="Search for brands and products here..." onInput={e => handleSearch(e.target.value)}/>
                         </div>
-                        <div className="user-actions">
+                        <div className="user-actions" onClick={handleNavToggle}>
                             <Profile/>
                             <Wishlist/>
                             <Bag />
