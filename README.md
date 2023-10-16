@@ -1,8 +1,6 @@
 # Mock Myntra
 A mock eCommerce website that is inspired by [Myntra](https://www.myntra.com).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/058c9541-bcbc-4efe-bcfa-31444d4a7707/deploy-status)](https://app.netlify.com/sites/mock-myntra/deploys)
-
 # Project Objectives
 1. Create a Shirts Page that resembles [Myntra](https://www.myntra.com/shirts) shirts page.
     - Add Filter functinality.
@@ -64,7 +62,7 @@ product info. Lets user select size for the product and after that lets the user
 
 Bag/Cart page can be accessed by clicking the "Bag" icon in Navigation. Displays Items in wish list and items in bag. Multiple Items can be added to to Wishlist and Bag.
 
-##  Deployment and Running project Locally
+##  Running project Locally
 
 ### 1. Run Locally
 
@@ -74,7 +72,3 @@ Bag/Cart page can be accessed by clicking the "Bag" icon in Navigation. Displays
 - Run ``npm install `` to install all dependencies.
 - Run ``npm run dev`` to start local development server.
 -  Visit localhost in browser to view the application.
-
-### 2. Deployed Live Link.
-
-- The website is deployed on netlify. This is the [live link](https://mock-myntra.netlify.app/) to the website.
